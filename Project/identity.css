@@ -1,0 +1,106 @@
+
+
+.navigation .btnLogin-popup{
+    position:absolute;
+    width:130px;
+    height: 50px;
+    top:0;
+    right:0;
+    
+    
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 5px solid salmon;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:  #fff;
+    font-weight: 500;
+    transition: .5s;
+   
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background-color: orange;
+    color: #fff;
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('restaurant.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+ }
+
+
+ 
+ .services{
+    position: relative;
+
+ 	max-width: 1000px;
+ 	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .service+.service{
+ 	margin-left: 15em;
+ }
+
+.service .icon {
+    position: absolute;
+    left: 37.5%;
+    top: 20%;
+    font-size: 4.5em;
+    color: #162938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    width:300px;
+    height: 500px;
+    border:solid 2px salmon;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: rgba(0,0,0,0.5);
+} 
+
+
+.btn{
+    width:300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+	text-transform: uppercase;
+    color: orange; 
+    font-size: 2em;
+	font-weight: 900;
+    transition: transform 0.5s ease-in-out;
+
+ }
+
+ .btn:hover{
+    transform: scale(1.1);
+
+ }
+
+
+
+

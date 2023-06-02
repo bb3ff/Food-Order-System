@@ -1,0 +1,130 @@
+ 
+ .logo{
+
+    font-size:2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation .btnLogin-popup{
+    position:absolute;
+    width:130px;
+    height: 50px;
+    top:0;
+    right:0;
+    
+    
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 5px solid  #fff ;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:  #fff;
+    font-weight: 500;
+    transition: .5s;
+   
+
+}
+
+.navigation .btnLogin-popup:hover{
+    background-color: #fff;
+    color: #162938;
+
+}
+ 
+ body{
+    position: relative;
+    min-height: 100vh;
+    background: url('restaurant.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+ }
+ 
+ .services{
+    position: relative;
+ 	display: flex;
+ 	max-width: 1000px;
+ 	margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+ }
+ .service+.service{
+ 	margin-left: 3em;
+ }
+
+ .btn{
+    width:200px;
+    height: 100px;
+    border:solid 2px  #16e0bd;
+    border-radius: 20px;
+    background-color: #16e0bd;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+    transition: transform 0.5s ease-in-out;
+
+ }
+
+ .btn:hover{
+    transform: scale(1.1);
+
+ }
+
+ .Menu,
+ .function{
+    margin-top: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin-bottom: 20px;
+ }
+.function_title{
+    text-align:center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+ .menu_title{
+    text-align: center;
+    color: #fff;
+
+ }
+
+ .menu_subtitle{
+    text-align: center;
+    color: #16e0bd;
+    margin-bottom: 2em;
+ }
+
+ .food-imgs{
+    display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(600px,2fr)) ;
+ }
+
+ .food_item{
+	background-color: #16e0bd;
+	overflow: hidden;
+}
+.food_img{
+	transition:  transform 800ms cubic-bezier(.5, 0, .5, 1),
+	opacity 250ms linear;
+}
+.food_item:focus{
+	position: relative;
+	z-index: 2;
+}
+.food_img:hover,
+.food_item:focus .food-img{
+	transform: scale(1.2);
+	opacity: 0.75;
+}
+
